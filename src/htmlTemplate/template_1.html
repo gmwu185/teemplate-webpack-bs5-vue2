@@ -31,6 +31,15 @@
           <button type="button" class="btn btn-link">Link</button>
         </div>
       </div>
+      <div class="row">
+        <div class="col">
+          <ul id="app" class="list-unstyled">
+            <li v-for="(item, index) in ajaxData">
+              {{ index + 1 }} - {{ item.Add }}
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>

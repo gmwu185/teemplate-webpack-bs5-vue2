@@ -59,6 +59,10 @@ module.exports = {
       path.resolve('src/assets'),
       path.resolve('node_modules'),
     ],
+    alias: {
+      // 給 vue指定了一個別名. 代碼中使用到了 vue, 那麼會去找 node_module/vue/dist/vue.esm.js 文件進行編譯
+      'vue$': 'vue/dist/vue.esm.js',
+    },
     extensions: ['.js'],
   },
   devServer: {

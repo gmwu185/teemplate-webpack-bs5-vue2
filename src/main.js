@@ -1,5 +1,8 @@
 import '@babel/polyfill';
 
+import Vue from 'vue';
+window.Vue = Vue; // 將 Vue 物件掛到全域 window 下
+
 import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.js';
 window.bootstrap = bootstrap; // 將 bootstrap 指向全域
 
