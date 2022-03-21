@@ -1,0 +1,10 @@
+node_modules/
+src/assets/fonts/fontawesome-free
+
+# macOS
+.DS_Store
+
+# 專案排除
+inbox/
+dist/
+docs/

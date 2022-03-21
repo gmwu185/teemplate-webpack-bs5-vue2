@@ -1,0 +1,122 @@
+// //引入fontawesome樣式
+// // @import 'node_modules/@fortawesome/fontawesome-free/scss/variables';
+
+// //fortawesome webfonts
+// // $fa-font-path: '/node_modules/@fortawesome/fontawesome-free/webfonts';
+// $fa-font-path:         "~assets/fonts/fontawesome-free" !default;
+
+// @import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+// // @import 'node_modules/@fortawesome/fontawesome-free/scss/solid';
+// // @import '~@fortawesome/fontawesome-free/scss/regular';
+// // @import '~@fortawesome/fontawesome-free/scss/brands';
+
+
+/*=============================================
+=                   base                   =
+=============================================*/
+
+@import 'base/fontSet';
+// img {
+//   max-width: 100%;
+// }
+body {
+  background-image: url(~images/logo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/*============  End of base  =============*/
+
+
+
+/*=============================================
+=                   vendors                   =
+=============================================*/
+
+/* bootstrap 5 -------------------------------------------------------------- */
+// scss-docs-start import-stack
+// Configuration
+@import "bootstrap/scss/functions";
+// @import "vendors/bs5/variables";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+// @import "vendors/bs5/utilities";
+@import "bootstrap/scss/utilities";
+
+// Layout & components
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+// @import "vendors/bs5/navbar";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+// @import "vendors/bs5/accordion";
+@import "bootstrap/scss/accordion";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/pagination";
+// @import "vendors/bs5/badge";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/popover";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/spinners";
+@import "bootstrap/scss/offcanvas";
+
+// Helpers
+@import "bootstrap/scss/helpers";
+
+// Utilities
+@import "bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+// BS 權重獨立
+// @import "vendors/bs5/btnWeight_independent";
+// @import "vendors/bs5/accordion_openShadow";
+// /BS 權重獨立
+/* /bootstrap 5 -------------------------------------------------------------- */
+
+/*============  End of vendors  =============*/
+
+
+
+/*=============================================
+=                   pages                   =
+=============================================*/
+
+
+/*============  End of pages  =============*/
+
+
+
+/*=============================================
+=                   components                   =
+=============================================*/
+
+
+/*============  End of components  =============*/
+
+
+
+/*=============================================
+=                   utilities                   =
+=============================================*/
+
+
+/*============  End of utilities  =============*/

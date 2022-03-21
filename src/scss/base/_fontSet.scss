@@ -1,0 +1,36 @@
+/* Font Awesome 5 ----------------------------------------------------------- */
+/** 圖示列表
+ * - https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=you&m=free
+ */
+@import '../vendors/fontawesome5/variables';
+@import '../vendors/fontawesome5/brands';
+@import '../vendors/fontawesome5/regular';
+@import '../vendors/fontawesome5/solid';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/mixins';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/core';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/larger';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fixed-width';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/list';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/bordered-pulled';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/animated';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/rotated-flipped';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/stacked';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/icons';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/screen-reader';
+/* /Font Awesome 5 ----------------------------------------------------------- */
+
+/* Google Fonts ------------------------------------------------------------- */
+/** 思源黑體 (Regular, Medium, Bold):
+ * - Noto Sans CJK TC: (非 webFont 字型)
+ *   - https://www.google.com/get/noto/#sans-hant
+ *   - https://www.google.com/get/noto/help/cjk/
+ *   - https://techmoon.xyz/noto-sans-tc/ (WebFont - Noto San TC 與 Noto Sans CJK 差別)
+ * - Noto Sans TC:
+ *   - https://fonts.google.com/specimen/Noto+Sans+TC
+ */
+// @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+/** Baloo Tamma 2 (SemiBold)
+ * - https://fonts.google.com/specimen/Baloo+Tamma+2
+ */
+// @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600&display=swap');
+/* Google Fonts ------------------------------------------------------------- */
