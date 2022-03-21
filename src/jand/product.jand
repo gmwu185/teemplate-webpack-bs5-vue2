@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+html(lang='zh-Hant-TW' class='no-js')
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    title product
+
+body
+    div(id="app") product
+

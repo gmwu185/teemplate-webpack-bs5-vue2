@@ -6,7 +6,7 @@ var extractCSS = new ExtractTextPlugin('[name].css');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-console.log("__dirname", __dirname)
+console.log('__dirname', __dirname);
 console.log('resolve:', path.resolve(__dirname, './src'));
 console.log('process.env.NODE_ENV:', process.env.NODE_ENV);
 
@@ -61,7 +61,7 @@ module.exports = {
     ],
     alias: {
       // 給 vue指定了一個別名. 代碼中使用到了 vue, 那麼會去找 node_module/vue/dist/vue.esm.js 文件進行編譯
-      'vue$': 'vue/dist/vue.esm.js',
+      vue$: 'vue/dist/vue.esm.js',
     },
     extensions: ['.js'],
   },
@@ -114,6 +114,24 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.(pug|jand)$/,
+        // use: ['html-loader', 'pug-html-loader'], // 預設壓單行
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              // minimize: false, // 不壓縮 HTML
+            },
+          },
+          {
+            loader: 'pug-html-loader',
+            options: {
+              pretty: true, // 美化 HTML 的編排 (不壓縮 HTML 的一種)
+            },
+          },
+        ],
+      },
       // {
       //   test: /\.css$/,
       //   // use: extractCSS.extract(['css-loader', 'postcss-loader']),
@@ -247,6 +265,20 @@ module.exports = {
       filename: 'card.html',
       template: 'htmlTemplate/template_2.html',
       chunks: ['vendor', 'main', 'card'],
+      minify: {
+        collapseWhitespace: false, // true HTML 壓成單行
+        removeComments: true, // 刪除註解
+        removeRedundantAttributes: true, // 刪除多餘的屬性
+        removeScriptTypeAttributes: true, // 刪除腳本類型屬性
+        removeStyleLinkTypeAttributes: true, // 刪除樣式鏈接類型屬性
+        useShortDoctype: true, // 使用簡短的文檔類型
+      },
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'product.html',
+      template: 'jand/product.jand',
+      chunks: ['vendor', 'main'],
+      // inject: 'head', // true | 'head' | 'body' | false
       minify: {
         collapseWhitespace: false, // true HTML 壓成單行
         removeComments: true, // 刪除註解
