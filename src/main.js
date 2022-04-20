@@ -34,7 +34,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 * 使用 image-webpack-loader 引入 webpack，於 Scss 中以 '~' 做為相對路徑處理
 * 對應輸出路徑指向 assets/images/xx.xxx
  */
-import 'images/logo.jpg';
+import 'images/logo.png';
 /* /url-loader 與 image-webpack-loader 使用圖片 */
 /* / 圖片 ----------------------------------------------------------------------- */
 
