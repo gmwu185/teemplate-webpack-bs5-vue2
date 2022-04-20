@@ -7,4 +7,4 @@ src/assets/fonts/fontawesome-free
 # 專案排除
 inbox/
 dist/
-docs/
+# docs/
