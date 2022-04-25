@@ -15,8 +15,8 @@ module.exports = {
   context: path.resolve(__dirname, './src'),
   entry: {
     main: 'main',
-    index: 'assets/js/index',
-    card: 'assets/js/card',
+    p_index: 'assets/js/p_index',
+    p_card: 'assets/js/p_card',
   },
   /** Webpack 前端打包工具 - 依照指定環境挑選適合的 SourceMap 類型
    * https://awdr74100.github.io/2020-04-02-webpack-devtool/
@@ -115,7 +115,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(pug|jand)$/,
+        test: /\.(pug|jade)$/,
         // use: ['html-loader', 'pug-html-loader'], // 預設壓單行
         use: [
           {
@@ -190,7 +190,7 @@ module.exports = {
                 enabled: false,
               },
               pngquant: {
-                quality: [0.65, 0.90],
+                quality: '65-90',
                 speed: 4,
               },
               gifsicle: {
@@ -251,7 +251,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'htmlTemplate/template_1.html',
-      chunks: ['vendor', 'main', 'index'],
+      chunks: ['vendor', 'main', 'p_index'],
       minify: {
         collapseWhitespace: false, // true HTML 壓成單行
         removeComments: true, // 刪除註解
@@ -264,7 +264,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'card.html',
       template: 'htmlTemplate/template_2.html',
-      chunks: ['vendor', 'main', 'card'],
+      chunks: ['vendor', 'main', 'p_card'],
       minify: {
         collapseWhitespace: false, // true HTML 壓成單行
         removeComments: true, // 刪除註解
@@ -276,7 +276,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'product.html',
-      template: 'jand/product.jand',
+      template: 'jand/product.jade',
       chunks: ['vendor', 'main'],
       // inject: 'head', // true | 'head' | 'body' | false
       minify: {
