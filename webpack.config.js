@@ -139,7 +139,7 @@ module.exports = {
       //   exclude: path.resolve('./node_modules'),
       // },
       {
-        test: /\.(sass|scss)$/,
+        test: /^(?!_).*.(\.sass|\.scss)$/,
         use: extractCSS.extract([
           {
             loader: 'css-loader',
